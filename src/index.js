@@ -8,12 +8,12 @@ const routes = require('./routes/routes');
 const app = express();
 
 // Setting
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 const port = app.get('port');
 
 // Database
 mongoose.Promise = global.Promise;
-const url = 'mongodb://localhost/';
+const url = 'mongodb+srv://pos_bar_app:sy4CCGKdbq4EEi6@cluster0.bhr5i.mongodb.net/';
 const db = 'db_pos_bar';
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 
